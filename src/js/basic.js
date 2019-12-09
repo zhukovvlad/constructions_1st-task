@@ -1,7 +1,10 @@
-export default function sum(items) {
-  let result = 0;
-  for (const item of items) {
-    result += item;
+export default function numberOrNot(quantity) {
+  try {
+    if (Number.isNaN(Number(quantity))) {
+      throw new Error(`Error in type of input ${quantity}`);
+    }
+    return Number(quantity);
+  } catch (error) {
+    return (`${error}`);
   }
-  return result;
 }

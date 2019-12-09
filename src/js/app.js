@@ -1,6 +1,5 @@
 // TODO: write your code here
-import sum from './basic';
+import numberOrNot from './basic';
 
-console.log('worked');
-
-console.log(sum([1, 2]));
+const paragraf = document.getElementsByTagName('p')[0];
+paragraf.textContent = numberOrNot('foo');
