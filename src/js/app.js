@@ -1,5 +1,5 @@
 // TODO: write your code here
-import numberOrNot from './basic';
+import isItNumber from './isItNumber';
 
 const paragraf = document.getElementsByTagName('p')[0];
-paragraf.textContent = numberOrNot('foo');
+paragraf.textContent = isItNumber('foo');
