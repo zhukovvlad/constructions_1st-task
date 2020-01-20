@@ -2,6 +2,7 @@ import isItNumber from '../isItNumber';
 
 test.each([
   ['hex case', 'ffffff', 'Error: Error in type of input ffffff'],
+  ['mix case', '1q2w3e4r', 'Error: Error in type of input 1q2w3e4r'],
   ['case with float. It is to be Integer.', 16.2, 16],
   ['case with string number', '15', 15],
   ['case with number', 15, 15],
